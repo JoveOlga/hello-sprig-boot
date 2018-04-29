@@ -1,0 +1,8 @@
+language: java
+sudo: false
+postgres:
+  adapter: postgresql
+  database: hello
+  username: postgres
+before_script:
+  - "psql -Upostgres <hello.sql"
