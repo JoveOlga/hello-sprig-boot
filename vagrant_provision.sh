@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 sudo apt-get update
 echo "Installing Tomcat.."
-sudo apt-get install -y tomcat7
-echo "Installing Tomcat7 docs.."
-sudo apt-get install -y tomcat7-docs
-echo "Installing Tomcat7 administration webapps.."
-sudo apt-get install -y tomcat7-admin
-echo "Installing Tomcat7 examples webapps.."
-sudo apt-get install tomcat7-examples
+sudo apt-get install -y tomcat9
+echo "Installing Tomcat9 docs.."
+sudo apt-get install -y tomcat9-docs
+echo "Installing Tomcat9 administration webapps.."
+sudo apt-get install -y tomcat9-admin
+echo "Installing Tomcat9 examples webapps.."
+sudo apt-get install tomcat9-examples
 echo "Installing Git.."
 sudo apt-get install -y git
 echo "Installing Maven.."
@@ -21,4 +21,4 @@ sudo apt-get install oracle-java8-installer
 echo "Setting environment variables for Java 7.."
 sudo apt-get install -y oracle-java8-set-default
 sudo apt-get update
-
+sudo apt-get install postgresql postgresql-contrib -y
