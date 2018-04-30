@@ -14,14 +14,23 @@ vagrant ssh
 sudo apt-get install postgresql postgresql-contrib
 
 sudo -i -u postgres
-cd /vagrant
-psql -Upostgres <hello.sql
-exit
 
 cd /vagrant
+
+psql -Upostgres <hello.sql
+
+exit
+
+
+cd /vagrant
+
 mvn clean install
+
 cd target/
+
 java -jar hello-1.0-SNAPSHOT.jar
+
+
 
 результат проверять по адресу
 http://192.168.33.10:8090/hello/contacts/?nameFilter=M
