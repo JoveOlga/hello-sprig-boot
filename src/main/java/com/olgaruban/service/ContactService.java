@@ -5,6 +5,6 @@ import com.olgaruban.model.Contact;
 import java.util.List;
 
 public interface ContactService {
-    List<Contact> getCache();
+    void setCache();
     List<Contact> getListExcept(String pattern);
 }
